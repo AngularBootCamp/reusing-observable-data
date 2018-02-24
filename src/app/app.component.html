@@ -2,11 +2,11 @@
   <div class="col s6">
     <section class="card">
       <div class="card-content">
-        <div class="card-title">Phone Data</div>
-        <p>Phone = {{ phone1 | async }}</p>
+        <div class="card-title">Company Data</div>
+        <p>Phone = {{ company | async | json }}</p>
         <button (click)="flag = !flag">Show data again</button>
         <div *ngIf="flag">
-          <p>Phone = {{ phone1 | async }}</p>
+          <p>Phone = {{ company | async | json }}</p>
           <p>(without reloading from server)</p>
         </div>
       </div>

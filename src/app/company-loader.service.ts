@@ -11,11 +11,11 @@ const API_URL = 'https://api.angularbootcamp.com';
 // const API_URL = 'https://api.angularbootcamp.com';
 
 @Injectable()
-export class PhoneLoader {
+export class CompanyLoader {
   constructor(private http: HttpClient) { }
 
-  loadOnePhone() {
-    return this.http.get(API_URL + '/phones')
-      .pipe(map((res: Response) => res.json()[0].name));
+  loadOneCompany() {
+    return this.http.get(API_URL + '/companies')
+      .pipe(map(list => list[0]));
   }
 }
