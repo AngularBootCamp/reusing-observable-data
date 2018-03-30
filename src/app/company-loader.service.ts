@@ -9,7 +9,7 @@ export class CompanyLoader {
   constructor(private http: HttpClient) { }
 
   loadOneCompany() {
-    return this.http.get(API_URL + '/companies')
+    return this.http.get<any[]>(API_URL + '/companies')
       .pipe(map(list => list[0]));
   }
 }
