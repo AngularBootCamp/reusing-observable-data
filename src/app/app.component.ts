@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { publishReplay, refCount } from 'rxjs/operators';
 
 import { CompanyLoader } from './company-loader.service';
