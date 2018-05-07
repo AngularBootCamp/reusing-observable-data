@@ -7,7 +7,6 @@ import { CompanyLoader } from './company-loader.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  providers: [CompanyLoader]
 })
 export class AppComponent {
   company: Observable<any>;

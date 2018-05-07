@@ -4,7 +4,9 @@ import { map } from 'rxjs/operators';
 
 const API_URL = 'https://api.angularbootcamp.com';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class CompanyLoader {
   constructor(private http: HttpClient) { }
 
