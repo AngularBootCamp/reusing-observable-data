@@ -13,8 +13,6 @@ export class AppComponent {
   flag = false;
 
   constructor(loader: CompanyLoader) {
-    this.company = loader.loadOneCompany().pipe(
-      shareReplay(1)
-    );
+    this.company = loader.loadOneCompany().pipe(shareReplay(1));
   }
 }
