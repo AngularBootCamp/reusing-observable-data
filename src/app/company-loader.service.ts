@@ -11,9 +11,9 @@ export interface Company {
 
 const apiUrl = 'https://api.angularbootcamp.com';
 
-function logWithTimestamp(data: any) {
-  console.table(data);
-  console.log('Data retrieved at ' + new Date().toISOString());
+function logWithTimestamp(messageList: any[]) {
+  console.table(messageList);
+  console.log('Messages retrieved at ' + new Date().toISOString());
 }
 
 @Injectable({
