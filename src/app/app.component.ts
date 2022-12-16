@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
-import { shareReplay } from 'rxjs/operators';
+import { Observable, shareReplay } from 'rxjs';
 
 import { Company, CompanyLoader } from './company-loader.service';
 
