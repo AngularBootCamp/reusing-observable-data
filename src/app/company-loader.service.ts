@@ -11,7 +11,7 @@ export interface Company {
 
 const apiUrl = 'https://api.angularbootcamp.com';
 
-function logWithTimestamp(messageList: any[]) {
+function logWithTimestamp(messageList: unknown[]) {
   console.table(messageList);
   console.log('Messages retrieved at ' + new Date().toISOString());
 }
