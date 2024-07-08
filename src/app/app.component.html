@@ -5,8 +5,10 @@
 
   <button (click)="showAgain = !showAgain">Show company again</button>
 
-  <div *ngIf="showAgain">
-    <pre>{{ company | async | json }}</pre>
-    <p>(without reloading from server)</p>
-  </div>
+  @if (showAgain) {
+    <div>
+      <pre>{{ company | async | json }}</pre>
+      <p>(without reloading from server)</p>
+    </div>
+  }
 </article>
